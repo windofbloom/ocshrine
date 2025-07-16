@@ -66,6 +66,11 @@ pre {
   font-size: 1em; /* 2 */
 }
 
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
 /* Text-level semantics
    ========================================================================== */
 
