@@ -1,0 +1,27 @@
+---
+/*STYLES*/
+import '../styles/Layout.css'
+import '../styles/Normalize.css'
+
+/*FONTS*/
+
+/*COMPONETS*/
+import Head from './Head.astro';
+import Nav from './Nav.astro';
+import Footer from './Footer.astro';
+
+/*FUNCTIONS*/
+const { title = 'OC Shrine', description = 'A dedicated page for my original characters', image} = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+     <Head {title} {description} {image} />
+<body>
+    <Nav />
+    <main>
+        <slot />
+    </main>
+    <Footer />
+</body>
+</html>

@@ -1,0 +1,25 @@
+/**GENERAL STYLES**/
+
+:root {
+
+    --primary-color-alex: #b52433;
+    --dark-color-alex: #21243b;
+    --light-color-alex: #dad2b4;
+    --darker-light-alex: #b4a282;
+    --text-color: #1e1d1b;
+  }
+
+  html {
+    box-sizing: border-box;
+  }
+
+ *,
+ *::before,
+ *::after {
+    box-sizing: border-box;
+ }
+
+ body {
+    padding: 0;
+    margin: 0;
+ }
