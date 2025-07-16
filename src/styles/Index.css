@@ -1,6 +1,9 @@
 .container {
     background: var(--general-bg);
     min-height: 100vh;
+    background-image: 
+    url("https://www.transparenttextures.com/patterns/broken-noise.png");
+  background-blend-mode: overlay;
 }
 
 .header__background {
@@ -24,8 +27,15 @@
 
 .index__title {
     font-family: 'Metamorphous', serif;
-    text-transform: uppercase;
+    text-transform: lowercase;
     letter-spacing: 3px;
+}
+
+.index__subtitle {
+    font-family: 'Poiret One', system-ui;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
 }
 
 .index__title::before {
@@ -51,6 +61,11 @@
     background: var(--accent-color);
     padding: .8rem;
     margin-top: 2rem;
+    color: var(--light-green);
+    letter-spacing: 2px;
+}
+
+.header__cite a {
     color: var(--light-green);
 }
 
