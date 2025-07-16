@@ -1,0 +1,26 @@
+---
+/*STYLES*/
+import '../styles/Alexandrite.css'
+
+/*COMPONETS*/
+import Layout from "../layouts/Layout.astro"
+import { Image } from 'astro:assets';
+import AlexBGImg from '../assets/AlexShrineBanner.png'
+---
+
+<Layout>
+	<div class="container">
+		<div class="header">
+			<Image src={AlexBGImg} alt="" class="header__background" />
+		</div>
+		<div class="header__text fadeIn-animation">
+			<blockquote>           
+				<h1 class="alex__title">Alexandrite [ .deus ]</h1>
+				<h2 class="alex__subtitle">The sacrificial lamb who decided to replace God</u></h2>
+				<p class="content">
+					Lorem ipsum dolor sit amet, <span class="italic__text"><i>consectetur adipiscing elit</i></span>, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+				</p>
+			</blockquote>
+		</div>
+	</div>
+</Layout>
