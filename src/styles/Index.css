@@ -1,0 +1,33 @@
+.container {
+    background: var(--general-bg);
+    min-height: 100vh;
+}
+
+.header__background {
+    width: 100%;
+    height: 650px;
+    background-position: center;
+    object-fit: cover;
+    mask-image: linear-gradient(
+        black 80%, 
+        transparent
+    );
+}
+
+.header__text {
+  position: absolute;
+  top: 65%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+}
+
+.content {
+    margin-bottom: 2rem;
+}
+
+.header__cite {
+    background: var(--accent-color);
+    padding: .8rem;
+    margin-top: 2rem;
+}

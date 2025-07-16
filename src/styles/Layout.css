@@ -1,7 +1,11 @@
 /**GENERAL STYLES**/
 
 :root {
-
+    --general-bg: #a4b7ac;
+    --accent-color: #d6332a;
+    --dark-color: #8b9ca3;
+    --light-green: #c4d6be;
+    
     --primary-color-alex: #b52433;
     --dark-color-alex: #21243b;
     --light-color-alex: #dad2b4;
@@ -23,7 +27,7 @@
  body {
     padding: 0;
     margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Georgia", serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
@@ -40,8 +44,4 @@
 
  p {
    margin: 0 0 1rem;
- }
-
- p:last-of-type {
-   margin: 0;
  }

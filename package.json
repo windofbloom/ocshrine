@@ -9,6 +9,9 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@fontsource/cormorant": "^5.2.6",
+    "@fontsource/metamorphous": "^5.2.6",
+    "@fontsource/poiret-one": "^5.2.6",
     "astro": "^5.11.1"
   }
 }
