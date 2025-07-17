@@ -1,0 +1,26 @@
+.divider__top {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  margin-bottom: 35px;
+}
+
+.divider__top img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Responsive  */
+@media (max-width: 900px) {
+  .divider__top {
+    position: static;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    margin-bottom: -5.1rem;
+  }
+}

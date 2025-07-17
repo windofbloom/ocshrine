@@ -80,9 +80,11 @@
 /* Responsive  */
 @media (max-width: 800px) {
     .header__text {
-        top: 60%;
-        left: 50%;
+        position: relative;
+        top: 0%;
+        left: 52%;
         width: 100%;
+        margin-bottom: -10rem;
     }
 
     .header__background {

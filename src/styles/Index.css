@@ -3,7 +3,7 @@
     min-height: 100vh;
     background-image: 
     url("https://www.transparenttextures.com/patterns/broken-noise.png");
-  background-blend-mode: overlay;
+    background-blend-mode: overlay;
 }
 
 .header__background {
@@ -29,6 +29,12 @@
     font-family: 'Metamorphous', serif;
     text-transform: lowercase;
     letter-spacing: 3px;
+}
+
+.underline_text {
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-underline-offset: 8px;
 }
 
 .index__subtitle {
@@ -69,15 +75,113 @@
     color: var(--light-green);
 }
 
+.characters {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+    margin-top: 5rem;
+    background: var(--light-green);
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+    background-blend-mode: hard-light;
+}
+
+.characters__container {
+    display: flex;
+    gap: 3rem;
+    width: 80%;
+    justify-content: center;
+}
+
+.title__container {
+    color: var(--light-green);
+    text-transform: lowercase;
+    letter-spacing: 3px;
+    font-size: 2.2rem;
+}
+
+.characters__title {
+    font-family: 'Metamorphous', serif;
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-underline-offset: 8px;
+    color: var(--dark-color);
+}
+
+.index__alex, .index__tsukiko {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    gap: .2rem;
+    background: var(--general-bg);
+    padding: 1rem;
+    border: 1px solid var(--dark-color-alex);
+    box-shadow: 7px 6px 1px 1px var(--dark-color);
+}
+
+.card__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card__content {
+    text-align: center;
+}
+
+.indexImg {
+    width: 50%;
+    height: 300px;
+    object-fit: cover;
+    --s: 10px; 
+    padding: var(--s);
+    border: calc(2*var(--s)) solid #0000;
+    outline: 1px solid var(--dark-color-alex);
+    outline-offset: calc(-1*var(--s));
+    background: conic-gradient(from 90deg at 1px 1px,#0000 25%,var(--dark-color-alex) 0);
+    mask-image: linear-gradient(
+        black 50%, 
+        transparent
+    );
+}
+
+.character__name {
+    text-align: center;
+    font-family: 'Metamorphous', serif;
+    font-size: 1.5rem;
+    margin: 0;
+    text-decoration: overline;
+    color: var(--dark-color);
+}
+
 /* Responsive  */
-@media (max-width: 800px) {
+@media (max-width: 900px) {
     .header__text {
-        top: 60%;
-        left: 50%;
+        position: relative;
+        top: 0%;
+        left: 52%;
         width: 100%;
+        margin-bottom: -10rem;
     }
 
     .header__background {
         height: 455px;
+    }
+
+    .characters__title {
+        font-size: 2rem;
+    }
+
+    .characters__container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .index__alex, .index__tsukiko {
+        flex-direction: column;
+    }
+
+    .indexImg {
+        width: 100%;
     }
 }

@@ -4,8 +4,13 @@ import '../styles/Index.css'
 
 /*COMPONETS*/
 import Layout from "../layouts/Layout.astro"
+import DividerTop from "../components/DividerTop/DividerTop.astro"
+
+/*IMAGES*/
 import { Image } from 'astro:assets';
 import HeaderImg from '../assets/bigtexture141.png'
+import AlexIndex from '../assets/AlexIcon-nightshade-intensity-DEFAULT-V1.png'
+import TsukiIndex from '../assets/shamanoc5-1-shielded-robust.png'
 ---
 
 <Layout>
@@ -16,12 +21,43 @@ import HeaderImg from '../assets/bigtexture141.png'
 		<div class="header__text fadeIn-animation">
 			<blockquote>           
 				<h1 class="index__title">pulchra [ .anima ] ✻ imaginarium</h1>
-				<h2 class="index__subtitle">Website dedicated to <u>my original characters</u></h2>
+				<h2 class="index__subtitle">Website dedicated to <span class="underline_text">my original characters</span></h2>
 				<p class="content">
 					Lorem ipsum dolor sit amet, <span class="italic__text"><i>consectetur adipiscing elit</i></span>, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
 				</p>
 				<cite class="header__cite"><a href="https://windofbloom.com/" target="_blank">© windofbloom</a></cite>
 			</blockquote>
+		</div>
+		<DividerTop />
+		<div class="characters">
+			<div class="title__container">
+				<h2 class="characters__title">
+					imaginarium [ .protagonist ]
+				</h2>
+			</div>
+			<div class="characters__container">
+				<div class="index__alex">
+					<Image src={AlexIndex} alt="" class="indexImg" />
+					<div class="card__container">
+						<h3 class="character__name">
+							Alexandrite
+						</h3>
+						<p class="card__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						<a href="/alexandrite"><button class="btn">Boton</button></a>
+					</div>
+				</div>
+				<div class="index__tsukiko">
+					<Image src={TsukiIndex} alt="" class="indexImg" />
+					<div class="card__container">
+						<h3 class="character__name">
+							Tsukiko
+						</h3>
+						<p class="card__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						<a href="/tsukiko"><button class="btn">Boton</button></a>
+					</div>
+				</div>
+			</div>
+			<cite class="header__cite">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</cite>
 		</div>
 	</div>
 </Layout>
