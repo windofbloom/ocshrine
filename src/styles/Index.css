@@ -42,9 +42,10 @@
     font-size: 1rem;
     text-transform: uppercase;
     letter-spacing: 5px;
+    color: var(--text-color);
 }
 
-.index__title::before {
+.index__title::before, .characters__title::before, .author__title::before {
     content: "";
     display: inline-block;
     vertical-align: middle;
@@ -78,7 +79,6 @@
 .characters {
     display: flex;
     flex-direction: column;
-    align-items: center;
     padding: 3rem;
     margin-top: 5rem;
     background: var(--light-green);
@@ -90,14 +90,15 @@
     display: flex;
     gap: 3rem;
     width: 80%;
-    justify-content: center;
+    margin: auto;
+    margin-bottom: 5rem;
 }
 
 .title__container {
     color: var(--light-green);
     text-transform: lowercase;
     letter-spacing: 3px;
-    font-size: 2.2rem;
+    margin-bottom: 2rem;
 }
 
 .characters__title {
@@ -106,6 +107,24 @@
     text-decoration-style: wavy;
     text-underline-offset: 8px;
     color: var(--dark-color);
+    text-align: right;
+    font-size: 2rem;
+}
+
+.character__subtitle {
+    font-family: 'Poiret One', system-ui;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: var(--text-color);
+    text-align: right;
+}
+
+.short__text {
+    color: var(--text-color);
+    font-style: italic;
+    text-align: right;
+    margin-top: -1rem;
 }
 
 .index__alex, .index__tsukiko {
@@ -154,6 +173,51 @@
     color: var(--dark-color);
 }
 
+.about__autor {
+    display: flex;
+    padding: 5rem 3rem;
+    background: var(--general-bg);
+    background-image: url(https://www.transparenttextures.com/patterns/asfalt-dark.png);
+    background-blend-mode: hard-light;
+    justify-content: center;
+}
+
+.about__content {
+    display: flex;
+    width: 70%;
+    align-items: center;
+}
+
+.avatar {
+    border-radius: 50%;
+    width: 60%;
+    margin: auto;
+    box-shadow: 7px 6px 1px 1px var(--dark-color);
+}
+
+.author__title {
+    font-family: 'Metamorphous', serif;
+    font-size: 1.5rem;
+}
+
+.author__content {
+    margin-top: -2rem;
+}
+
+.author__socials {
+    display: flex;
+    gap: 1rem;
+}
+
+.social__icons {
+    color: var(--text-color);
+    font-size: 1.6rem;
+}
+
+.social__icons:hover {
+    color: var(--accent-color);
+}
+
 /* Responsive  */
 @media (max-width: 900px) {
     .header__text {
@@ -168,10 +232,6 @@
         height: 455px;
     }
 
-    .characters__title {
-        font-size: 2rem;
-    }
-
     .characters__container {
         flex-direction: column;
         width: 100%;
@@ -183,5 +243,9 @@
 
     .indexImg {
         width: 100%;
+    }
+
+    .about__content {
+        flex-direction: column;
     }
 }

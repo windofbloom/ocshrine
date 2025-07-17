@@ -1,0 +1,12 @@
+.divider__topDark {
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  margin-top: -27px;
+}
+
+.divider__topDark img {
+  display: block;
+  width: 100%;
+  height: auto;
+}

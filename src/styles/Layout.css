@@ -34,6 +34,7 @@
     font-size: 100%;
     line-height: 1.65;
     background-color: var(--white);
+    color: var(--text-color);
  }
 
  img {

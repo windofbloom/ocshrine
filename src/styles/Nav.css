@@ -52,7 +52,7 @@ a {
 .nav__item.sample > a,
 .nav__item > a:hover {
   background-color: transparent;
-  color: var(--light-green);
+  color: var(--accent-color);
 }
 
 .hamburger {

@@ -5,12 +5,17 @@ import '../styles/Index.css'
 /*COMPONETS*/
 import Layout from "../layouts/Layout.astro"
 import DividerTop from "../components/DividerTop/DividerTop.astro"
+import DividerTopDark from "../components/DividerTopDark/DividerTopDark.astro"
 
 /*IMAGES*/
 import { Image } from 'astro:assets';
 import HeaderImg from '../assets/bigtexture141.png'
 import AlexIndex from '../assets/AlexIcon-nightshade-intensity-DEFAULT-V1.png'
 import TsukiIndex from '../assets/shamanoc5-1-shielded-robust.png'
+import AvatarIndex from '../assets/profile-pic.png'
+
+/*ICONS*/
+import { Icon } from 'astro-icon/components'
 ---
 
 <Layout>
@@ -34,6 +39,10 @@ import TsukiIndex from '../assets/shamanoc5-1-shielded-robust.png'
 				<h2 class="characters__title">
 					imaginarium [ .protagonist ]
 				</h2>
+				<h3 class="character__subtitle">Lorem ipsum dolor sit amet</h3>
+				<p class="short__text">
+					Ut enim ad minim veniam, quis nostrud exercitation ullamco
+				</p>
 			</div>
 			<div class="characters__container">
 				<div class="index__alex">
@@ -57,7 +66,27 @@ import TsukiIndex from '../assets/shamanoc5-1-shielded-robust.png'
 					</div>
 				</div>
 			</div>
-			<cite class="header__cite">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</cite>
+		</div>
+		<DividerTopDark />
+		<div class="about__autor">
+			<div class="about__content">
+				<div class="author__avatar">
+					<Image src={AvatarIndex} alt="" class="avatar" />
+				</div>
+				<div class="author__smallbio">
+					<h4 class="author__title">
+						Bloom
+					</h4>
+					<p class="author__content">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+					</p>
+					<div class="author__socials">
+						<a href="https://bsky.app/profile/windofbloom.bsky.social" target="_blank"><Icon name="bsky" class={'social__icons'} /></a> 
+						<a href="https://www.instagram.com/windofbloom/" target="_blank"><Icon name="instagram" class={'social__icons'} /></a> 
+						<a href="https://ko-fi.com/windofbloom" target="_blank"><Icon name="kofi" class={'social__icons'} /></a> 						
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 </Layout>
