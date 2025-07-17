@@ -136,6 +136,7 @@
     padding: 1rem;
     border: 1px solid var(--dark-color-alex);
     box-shadow: 7px 6px 1px 1px var(--dark-color);
+    width: 50%;
 }
 
 .card__container {
@@ -239,6 +240,7 @@
 
     .index__alex, .index__tsukiko {
         flex-direction: column;
+        width: 100%;
     }
 
     .indexImg {
