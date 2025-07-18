@@ -3,7 +3,7 @@
     min-height: 100vh;
     background-image: 
     url("https://www.transparenttextures.com/patterns/broken-noise.png");
-  background-blend-mode: overlay;
+    background-blend-mode: overlay;
 }
 
 .header__background {
@@ -78,26 +78,28 @@
 }
 
 .alex__introContainer {
-    padding: 5rem 3rem;
     background: var(--dark-color-alex);
     color: var(--light-color-alex);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-image: 
+    url("https://dl.dropboxusercontent.com/scl/fi/hyw01xns10k5yy7jz7m03/bg-peonie-1.png?rlkey=257e937s8n3f5eadwucjvmcjd&st=60tcdwah&dl=0");
+    background-repeat: no-repeat;
+    background-blend-mode: screen;
+    background-position: bottom;
+    background-size: cover;
 }
 
 .alex__introText {
     width: 50%;
     text-align: center;
-}
-
-.alex__introImg {
-    margin: 0 2rem 2rem 2rem;
+    padding: 1rem;
 }
 
 .alex__introImg img {
-    width: 30%;
+    width: 25%;
     margin: auto;
 }
 
@@ -117,6 +119,24 @@
     margin-bottom: 2rem;
 }
 
+.stats {
+    padding: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.stats__info {
+    background: var(--primary-color-alex);
+    padding: 1rem;
+}
+
+.stats__info p {
+    margin: 0;
+    color: var(--light-color-alex);
+    text-decoration: overline;
+}
 
 /* Responsive  */
 @media (max-width: 800px) {
