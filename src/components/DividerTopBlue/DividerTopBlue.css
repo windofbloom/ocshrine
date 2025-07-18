@@ -1,36 +1,38 @@
-.divider__top {
+.divider__topBlue {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
   overflow: hidden;
   line-height: 0;
-  margin-bottom: 35px;
+  margin-bottom: 16px;
 }
 
-.divider__top img {
+.divider__topBlue img {
   display: block;
   width: 100%;
   height: auto;
 }
 
-/* Responsive  */
+/*RESPONSIVE*/
 
+/* Mobile (≤640px) */
 @media (max-width: 800px) {
-  .divider__top {
+  .divider__topBlue {
     position: static;
-    margin-bottom: -81px;
+    margin-bottom: -1px;
   }
 }
 
+/* Tablet (641px - 1024px) */
 @media (min-width: 801px) and (max-width: 1024px) {
-  .divider__top {
-    margin-bottom: 47rem;
+  .divider__topBlue {
+    margin-bottom: -1px;
   }
 }
 
 @media (min-width: 1024px) and (max-width: 1600px) {
-  .divider__top {
-    margin-bottom: 39.5rem;
-  }
+    .divider__topBlue {
+        margin-bottom: 38.5rem;
+    }
 }

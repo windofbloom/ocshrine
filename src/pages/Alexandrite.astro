@@ -4,8 +4,13 @@ import '../styles/Alexandrite.css'
 
 /*COMPONETS*/
 import Layout from "../layouts/Layout.astro"
+import DividerTopBlue from "../components/DividerTopBlue/DividerTopBlue.astro"
+import OrganicDivider from "../components/OrganicDivider/OrganicDivider.astro"
+
+/*IMAGES*/
 import { Image } from 'astro:assets';
 import AlexBGImg from '../assets/AlexShrineBanner.png'
+import AlexProfileImg from '../assets/frame-images1.png'
 ---
 
 <Layout>
@@ -21,6 +26,28 @@ import AlexBGImg from '../assets/AlexShrineBanner.png'
 					Lorem ipsum dolor sit amet, <span class="italic__text"><i>consectetur adipiscing elit</i></span>, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
 				</p>
 			</blockquote>
+		</div>
+		<DividerTopBlue />
+		<div class="alex__introContainer">
+			<div class="alex__introImg">
+				<Image src={AlexProfileImg} alt=""/>
+			</div>
+			<div class="alex__introText">
+				<p class="intro__content">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				</p>
+			</div>
+		</div>
+		<div class="alex__personality">
+			<OrganicDivider />
+			<p class="personality_content">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+			</p>
+			<OrganicDivider />
 		</div>
 	</div>
 </Layout>

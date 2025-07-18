@@ -77,6 +77,47 @@
     color: var(--light-green);
 }
 
+.alex__introContainer {
+    padding: 5rem 3rem;
+    background: var(--dark-color-alex);
+    color: var(--light-color-alex);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.alex__introText {
+    width: 50%;
+    text-align: center;
+}
+
+.alex__introImg {
+    margin: 0 2rem 2rem 2rem;
+}
+
+.alex__introImg img {
+    width: 30%;
+    margin: auto;
+}
+
+.alex__personality {
+    background: var(--light-color-alex);
+    padding: 5rem;
+}
+
+.personality_content {
+    width: 60%;
+    margin: auto;
+    column-count: 2;
+    column-gap: 2rem;
+    column-rule: var(--primary-color-alex) 1px solid;
+    text-align: justify;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+}
+
+
 /* Responsive  */
 @media (max-width: 800px) {
     .header__text {
@@ -89,5 +130,32 @@
 
     .header__background {
         height: 455px;
+    }
+
+    .alex__introContainer {
+        padding: 2rem;
+    }
+
+    .alex__introImg img {
+        width: 100%;
+    }
+
+    .alex__introText {
+        width: 100%;
+    }
+
+    .personality_content {
+        width: 100%;
+        column-count: 1;
+    }
+
+    .alex__personality {
+        padding: 2rem;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1600px) {
+      .header__text {
+        top: 39%;
     }
 }

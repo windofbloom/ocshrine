@@ -251,3 +251,9 @@
         flex-direction: column;
     }
 }
+
+@media (min-width: 1024px) and (max-width: 1600px) {
+      .header__text {
+        top: 34%;
+    }
+}
