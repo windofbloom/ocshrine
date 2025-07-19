@@ -11,6 +11,9 @@ import OrganicDivider from "../components/OrganicDivider/OrganicDivider.astro"
 import { Image } from 'astro:assets';
 import AlexBGImg from '../assets/AlexShrineBanner.png'
 import AlexProfileImg from '../assets/frame-images1.png'
+import Gallery1 from '../assets/Alex2-nightshade-intensity-DEFAULT-V1.png'
+import Gallery2 from '../assets/Alex3-nightshade-intensity-DEFAULT-V1.png'
+import Gallery3 from '../assets/Alex5-nightshade-intensity-DEFAULT-V1.png'
 ---
 
 <Layout>
@@ -23,7 +26,7 @@ import AlexProfileImg from '../assets/frame-images1.png'
 				<h1 class="alex__title">Alexandrite [ .deus ]</h1>
 				<h2 class="alex__subtitle">The sacrificial lamb who decided to replace God</u></h2>
 				<p class="content">
-					Lorem ipsum dolor sit amet, <span class="italic__text"><i>consectetur adipiscing elit</i></span>, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+					Lorem ipsum dolor sit amet, <i>consectetur adipiscing elit</i>, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
 				</p>
 			</blockquote>
 		</div>
@@ -37,19 +40,7 @@ import AlexProfileImg from '../assets/frame-images1.png'
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 				</p>
 			</div>
-		</div>
-		<div class="alex__personality">
-			<OrganicDivider />
-			<p class="personality_content">
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-			</p>
-			<OrganicDivider />
-		</div>
-		<div class="stats">
+			<div class="stats">
 			<span class="stats__info">
 				<p>25 years-old</p>
 			</span>
@@ -62,6 +53,23 @@ import AlexProfileImg from '../assets/frame-images1.png'
 			<span class="stats__info">
 				<p>Single?</p>
 			</span>
+		</div>
+		</div>
+		<div class="alex__personality">
+			<OrganicDivider />
+			<p class="personality_content">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+			</p>
+			<OrganicDivider />
+		</div>
+		<div class="gallery">
+  			<Image src={Gallery1} alt="" class="gallery-image" />
+  			<Image src={Gallery2} alt="" class="gallery-image" />
+  			<Image src={Gallery3} alt="" class="gallery-image" />
 		</div>
 	</div>
 </Layout>
