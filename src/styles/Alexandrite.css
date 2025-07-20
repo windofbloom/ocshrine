@@ -58,7 +58,11 @@
 
 .content {
     margin-bottom: 2rem;
-    color: var(--light-color-alex)
+    color: var(--light-color-alex);
+    text-shadow:
+        1px 2px 6px var(--dark-color-alex),
+         0 0 1em var(--dark-color-alex),
+        0 0 0.2em var(--dark-color-alex);
 }
 
 .italic__text {
@@ -168,6 +172,7 @@
 }
 
 .trivia__text {
+    width: 40%;
     padding: 1rem;
     height: 200px;
     overflow: auto;
@@ -291,6 +296,10 @@
         flex-direction: column;
         align-items: center;
         padding: 2rem;
+    }
+
+    .trivia__text {
+        width: 100%;
     }
 
     .worldbuilding {

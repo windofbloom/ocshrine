@@ -1,0 +1,37 @@
+---
+/*STYLES*/
+import '../styles/Contact.css'
+
+/*COMPONETS*/
+import Layout from "../layouts/Layout.astro"
+
+/*IMAGES*/
+import { Image } from 'astro:assets';
+import ContactImg from '../assets/bigtexture139.png'
+
+/*ICONS*/
+import { Icon } from 'astro-icon/components'
+---
+
+<Layout>
+	<div class="container">
+		<div class="header">
+			<Image src={ContactImg} alt="" class="contact__background" />
+		</div>
+		<div class="contact__text fadeIn-animation">
+			<blockquote>           
+				<h1 class="contact__title">Contact ✻ pulchra [ .anima ]</h1>
+				<h2 class="contact__subtitle">Hi~! <span class="underline_text">Bloom here</span></h2>
+				<p class="content">
+					If you want to contact me <span class="italic__text"><i>you can reach me thrugh my social media</i></span>. Bellow you'll find a direct link to my main website Imaginarium and links to my active social media. 
+				</p>
+				<cite class="contact__cite"><a href="https://windofbloom.com/" target="_blank">© windofbloom</a></cite>
+			</blockquote>
+            <div class="author__socials">
+				<a href="https://bsky.app/profile/windofbloom.bsky.social" target="_blank"><Icon name="bsky" class={'social__icons'} /></a> 
+				<a href="https://www.instagram.com/windofbloom/" target="_blank"><Icon name="instagram" class={'social__icons'} /></a> 
+				<a href="https://ko-fi.com/windofbloom" target="_blank"><Icon name="kofi" class={'social__icons'} /></a> 						
+			</div>
+		</div>
+	</div>
+</Layout>
