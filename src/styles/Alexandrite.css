@@ -85,7 +85,7 @@
     align-items: center;
     justify-content: center;
     background-image: 
-    url("https://dl.dropboxusercontent.com/scl/fi/hyw01xns10k5yy7jz7m03/bg-peonie-1.png?rlkey=257e937s8n3f5eadwucjvmcjd&st=60tcdwah&dl=0");
+    url("https://i.imgur.com/4nXhVmN.png");
     background-repeat: no-repeat;
     background-blend-mode: screen;
     background-position: bottom;
@@ -113,7 +113,7 @@
     padding: 5rem;
 }
 
-.personality_content {
+.personality_content, .world__contentLong {
     width: 60%;
     margin: auto;
     column-count: 2;
@@ -141,6 +141,57 @@
     margin: 0;
     color: var(--light-color-alex);
     text-decoration: overline;
+}
+
+.trivia {
+    background: var(--dark-color-alex);
+    display: flex;
+    justify-content: center;
+    padding: 5rem;
+    gap: 3rem;
+    background-image: 
+    url("https://i.imgur.com/4nXhVmN.png");
+    background-repeat: no-repeat;
+    background-blend-mode: screen;
+    background-position: bottom;
+    background-size: cover;
+}
+
+.trivia__letter h2 {
+    color: var(--light-color-alex);
+    font-size: 4rem;
+    font-family: 'Metamorphous', serif;
+    letter-spacing: .8rem;
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-underline-offset: 8px;
+}
+
+.trivia__text {
+    padding: 1rem;
+    height: 200px;
+    overflow: auto;
+    scrollbar-color: var(--primary-color-alex) var(--dark-color-alex);
+    scrollbar-width: thin;
+}
+
+.trivia__content {
+    color: var(--light-color-alex);
+}
+
+.worldbuilding {
+    padding: 5rem;
+    background-image: url(../assets/Alex3-nightshade-intensity-DEFAULT-V1.png);
+    
+}
+
+.world__content {
+    margin: auto;
+    text-align: center;
+}
+
+.world__contentLong p {
+    color: var(--light-color-alex);
 }
 
 .gallery {
