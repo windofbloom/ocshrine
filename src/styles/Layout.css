@@ -11,7 +11,15 @@
     --light-color-alex: #dad2b4;
     --darker-light-alex: #b4a282;
     --text-color: #1e1d1b;
+
+    --primary-color-tsuki: #c65f81;
+    --light-pink: #f0c6db;
+    --secondary-color-tsuki: #c2c2f0;
+    --dark-color-tsuki: #171531;
+
     --white: #fff;
+
+
   }
 
   html {

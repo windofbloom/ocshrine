@@ -1,0 +1,96 @@
+.tsukiko__container {
+    background: var(--dark-color-tsuki);
+    min-height: 100vh;
+    background-image: 
+    url("https://www.transparenttextures.com/patterns/broken-noise.png");
+    background-blend-mode: overlay;
+}
+
+.header__background {
+    width: 100%;
+    height: 750px;
+    background-position: center;
+    object-fit: cover;
+    mask-image: linear-gradient(
+        black 60%, 
+        transparent
+    );
+}
+
+.header__text {
+  position: absolute;
+  top: 75%;
+  left: 68%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+}
+
+.tsuki__title {
+    font-family: 'Metamorphous', serif;
+    text-transform: lowercase;
+    letter-spacing: 3px;
+    color: var(--dark-color-tsuki);
+}
+
+.tsuki__subtitle {
+    font-family: 'Poiret One', system-ui;
+    font-size: .5rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    background: var(--primary-color-tsuki);
+    padding: 1rem;
+    color: var(--dark-color-tsuki);
+}
+
+.tsuki__title::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    background-color: var(--dark-color-tsuki);
+    width: 60px;
+    height: 2px;
+    margin-left: -40px;
+    margin-right: 5px;
+}
+
+.content {
+    margin-bottom: 2rem;
+    color: var(--dark-color-tsuki);
+}
+
+.italic__text {
+    color: var(--accent-color);
+}
+
+.header__cite {
+    background: var(--accent-color);
+    padding: .8rem;
+    margin-top: 2rem;
+    color: var(--light-green);
+    letter-spacing: 2px;
+}
+
+.header__cite a {
+    color: var(--light-green);
+}
+
+/* Responsive  */
+@media (max-width: 800px) {
+    .header__text {
+        position: relative;
+        top: 0%;
+        left: 52%;
+        width: 100%;
+        margin-bottom: -10rem;
+    }
+
+    .header__background {
+        height: 455px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1600px) {
+      .header__text {
+        top: 39%;
+    }
+}
