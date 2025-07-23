@@ -1,0 +1,38 @@
+.divider__topPink {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  margin-bottom: 16px;
+}
+
+.divider__topPink img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/*RESPONSIVE*/
+
+/* Mobile (≤640px) */
+@media (max-width: 800px) {
+  .divider__topPink {
+    position: static;
+    margin-bottom: -1px;
+  }
+}
+
+/* Tablet (641px - 1024px) */
+@media (min-width: 801px) and (max-width: 1024px) {
+  .divider__topPink {
+    margin-bottom: -1px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1600px) {
+    .divider__topPink {
+        margin-bottom: 38.5rem;
+    }
+}

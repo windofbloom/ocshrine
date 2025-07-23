@@ -1,9 +1,10 @@
 .tsukiko__container {
-    background: var(--dark-color-tsuki);
+    background: var(--light-pink);
     min-height: 100vh;
     background-image: 
     url("https://www.transparenttextures.com/patterns/broken-noise.png");
     background-blend-mode: overlay;
+    color: var(--dark-color-tsuki);
 }
 
 .header__background {
@@ -72,6 +73,60 @@
 
 .header__cite a {
     color: var(--light-green);
+}
+
+.flag__Tsuki {
+    padding: 1rem;
+    text-align: center;
+    background: var(--light-pink);
+}
+
+.flag__Tsuki p {
+    margin: 0;
+    font-family: 'Poiret One', system-ui;
+    color: var(--secondary-color-tsuki23);
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+.intro__Tsuki {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    align-items: center;
+    padding: 2rem;
+}
+
+.left__column, .right__columns {
+    padding: 2rem;
+}
+
+.left__column, .right__columns, .center__column {
+    width: 33.33%;
+}
+
+.left__column h2, .right__columns h3 {
+    font-family: 'Metamorphous', serif;
+    font-size: 2rem;
+    color: var(--primary-color-tsuki);
+    margin: 0;
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-underline-offset: 8px;
+    margin-bottom: 1rem;
+}
+
+.center__column h3 {
+    font-family: 'Poiret One', system-ui;
+    font-size: .9rem;
+    background: var(--secondary-color-tsuki);
+    padding: .8rem;
+    color: var(--light-pink);
+    text-align: center;
+}
+
+.right__columns {
+    text-align: right;
 }
 
 /* Responsive  */
