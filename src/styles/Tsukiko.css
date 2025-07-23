@@ -40,7 +40,7 @@
     letter-spacing: 5px;
     background: var(--primary-color-tsuki);
     padding: 1rem;
-    color: var(--dark-color-tsuki);
+    color: var(--light-pink);
 }
 
 .tsuki__title::before {
@@ -116,6 +116,10 @@
     margin-bottom: 1rem;
 }
 
+.right__columns {
+    text-align: right;
+}
+
 .center__column h3 {
     font-family: 'Poiret One', system-ui;
     font-size: .9rem;
@@ -125,8 +129,14 @@
     text-align: center;
 }
 
-.right__columns {
-    text-align: right;
+.center__column img {
+    border-radius: 50%;
+    width: 85%;
+    height: 350px;
+    object-fit: cover;
+    margin: auto;
+    border: 2px solid var(--primary-color-tsuki);
+    padding: 1rem;
 }
 
 /* Responsive  */
@@ -141,6 +151,23 @@
 
     .header__background {
         height: 455px;
+    }
+
+    .intro__Tsuki {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .left__column, .right__columns, .center__column {
+        width: 100%;
+    }
+
+    .right__columns {
+        text-align: left;
+    }
+
+    .center__column img {
+        width: 100%;
     }
 }
 
