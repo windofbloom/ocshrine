@@ -1,9 +1,6 @@
 .tsukiko__container {
     background: var(--light-pink);
     min-height: 100vh;
-    background-image: 
-    url("https://www.transparenttextures.com/patterns/broken-noise.png");
-    background-blend-mode: overlay;
     color: var(--dark-color-tsuki);
 }
 
@@ -12,10 +9,6 @@
     height: 750px;
     background-position: center;
     object-fit: cover;
-    mask-image: linear-gradient(
-        black 60%, 
-        transparent
-    );
 }
 
 .header__text {
@@ -78,13 +71,13 @@
 .flag__Tsuki {
     padding: 1rem;
     text-align: center;
-    background: var(--light-pink);
+    background: var(--dark-color-tsuki);
 }
 
 .flag__Tsuki p {
     margin: 0;
     font-family: 'Poiret One', system-ui;
-    color: var(--secondary-color-tsuki23);
+    color: var(--primary-color-tsuki);
     font-size: 1.2rem;
     font-weight: 800;
 }
@@ -139,6 +132,63 @@
     padding: 1rem;
 }
 
+.past {
+    padding: 5rem;
+    background-image: url(/src/assets/webbg2.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    mask-image: linear-gradient(black 60%, transparent);
+}
+
+.overlay {
+    border-image: linear-gradient(
+        to bottom, var(--light-pink) 0%, 
+        transparent 100%) fill 1;
+}
+
+.past__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    width: 40%;
+    margin-left: auto;
+    margin-right: 3rem;
+}
+
+.past__img img, .present__img img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid var(--primary-color-tsuki);
+    padding: 1rem;
+}
+
+.past__text h3, .present__text h3 {
+    font-family: 'Metamorphous', serif;
+    font-size: 2rem;
+    color: var(--primary-color-tsuki);
+    margin: 0;
+    text-align: center;
+}
+
+.present {
+    padding: 5rem;
+    background: var(--secondary-color-tsuki);
+}
+
+.present__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    width: 40%;
+    margin-left: 3rem;
+}
+
+
 /* Responsive  */
 @media (max-width: 800px) {
     .header__text {
@@ -168,6 +218,16 @@
 
     .center__column img {
         width: 100%;
+    }
+
+    .past {
+        padding: 5rem 2rem;
+        background-position: left;
+    }
+
+    .past__content {
+        width: 100%;
+        margin: 0 auto;
     }
 }
 
