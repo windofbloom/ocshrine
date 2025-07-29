@@ -2,6 +2,9 @@
     background: var(--light-pink);
     min-height: 100vh;
     color: var(--dark-color-tsuki);
+    /*background-image: 
+    url("https://www.transparenttextures.com/patterns/broken-noise.png");
+    background-blend-mode: overlay;*/
 }
 
 .header__background {
@@ -133,18 +136,11 @@
 }
 
 .past {
-    padding: 5rem;
+    padding: 9rem;
     background-image: url(/src/assets/webbg2.png);
-    background-position: center center;
-    background-repeat: no-repeat;
+     background-repeat: no-repeat;
     background-size: cover;
-    mask-image: linear-gradient(black 60%, transparent);
-}
-
-.overlay {
-    border-image: linear-gradient(
-        to bottom, var(--light-pink) 0%, 
-        transparent 100%) fill 1;
+    background-position: center 20%;
 }
 
 .past__content {
@@ -157,7 +153,7 @@
     margin-right: 3rem;
 }
 
-.past__img img, .present__img img {
+.past__img img {
     width: 250px;
     height: 250px;
     object-fit: cover;
@@ -166,7 +162,16 @@
     padding: 1rem;
 }
 
-.past__text h3, .present__text h3 {
+.present__img img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid var(--light-pink);
+    padding: 1rem;
+}
+
+.past__text h3 {
     font-family: 'Metamorphous', serif;
     font-size: 2rem;
     color: var(--primary-color-tsuki);
@@ -174,9 +179,20 @@
     text-align: center;
 }
 
+.present__text h3 {
+    font-family: 'Metamorphous', serif;
+    font-size: 2rem;
+    color: var(--light-pink);
+    margin: 0;
+    text-align: center;
+}
+
 .present {
-    padding: 5rem;
-    background: var(--secondary-color-tsuki);
+    padding: 9rem;
+    background-image: url(/src/assets/webbg3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 25%;
 }
 
 .present__content {
@@ -222,13 +238,24 @@
 
     .past {
         padding: 5rem 2rem;
-        background-position: left;
+        background-position: 36%;
     }
 
-    .past__content {
+    .present {
+        padding: 5rem 2rem;
+        background-position: 36%;
+    }
+
+    .past__content, .present__content {
         width: 100%;
         margin: 0 auto;
     }
+
+    .overlay {
+    border-image: linear-gradient(
+        to top, var(--light-pink) 0%, 
+        transparent 100%) fill 1;
+}
 }
 
 @media (min-width: 1024px) and (max-width: 1600px) {
