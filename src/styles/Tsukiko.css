@@ -274,24 +274,18 @@
     }
 
     .past {
-        padding: 5rem 2rem;
-        background-position: 36%;
+        padding: 7rem 2rem 12rem 2rem;
+        background-position: right;
     }
 
     .present {
         padding: 5rem 2rem;
-        background-position: 36%;
+        background-position: left;
     }
 
     .past__content, .present__content {
         width: 100%;
         margin: 0 auto;
-    }
-
-    .overlay {
-        border-image: linear-gradient(
-            to top, var(--light-pink) 0%, 
-            transparent 100%) fill 1;
     }
 
     .trivia {
