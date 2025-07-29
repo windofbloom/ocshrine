@@ -13,12 +13,14 @@ import TsukikoBGImg from '../assets/TsukikoShrineBanner.png'
 import TsukiProfileImg from '../assets/haotsukiko8-2-nightshade-intensity-DEFAULT-V1.png'
 import PastTsukiImg from '../assets/shamanoc2-2.png'
 import PresentTsukiImg from '../assets/Car_Ride_2025-2.png'
-import Gallery1 from '../assets/Alex2-nightshade-intensity-DEFAULT-V1.png'
+import Gallery1 from '../assets/TeamHoshiGumi-nightshade-intensity-DEFAULT-V1.png'
 import Gallery2 from '../assets/Alex3-nightshade-intensity-DEFAULT-V1.png'
 import Gallery3 from '../assets/Alex5-nightshade-intensity-DEFAULT-V1.png'
 ---
 
-<Layout title="Tsukiko [ .anima ]">
+<Layout title="Tsukiko [ .anima ]"
+		description="A wanderer shaman with a nine-tails fox spirit as her companion."
+		image='/images/tsukiog.png'>
     <div class="tsukiko__container">
         <div class="tsuki__header">
 			<Image src={TsukikoBGImg} alt="" class="header__background" />
@@ -107,5 +109,10 @@ import Gallery3 from '../assets/Alex5-nightshade-intensity-DEFAULT-V1.png'
 			</div>
 		</div>
 		<TsukiFaq />
+		<div class="gallery">
+  			<Image src={Gallery1} alt="" class="gallery-image" />
+  			<Image src={Gallery2} alt="" class="gallery-image" />
+  			<Image src={Gallery3} alt="" class="gallery-image" />
+		</div>
     </div>
 </Layout>

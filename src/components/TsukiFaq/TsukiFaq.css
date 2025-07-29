@@ -21,6 +21,7 @@
 }
 
 .question p{
+    margin: 1rem auto;
     max-height: 0;
     opacity: 0;
     line-height: 1.5;
@@ -38,6 +39,15 @@
     color: var(--white);
 }
 
+.questions-title h4 {
+    color: var(--secondary-color-tsuki);
+    font-size: 3rem;
+    font-family: 'Metamorphous', serif;
+    letter-spacing: .8rem;
+    text-align: center;
+    margin: 0 0 2rem 0;
+}
+
 /*add this class when click*/
 .question p.show{
     max-height: 200px; 
@@ -53,5 +63,9 @@
     .questions-container {
         width: 100%;
         padding: 5rem 2rem;
+    }
+
+    .questions-title h4 {
+        font-size: 2rem;
     }
 }
