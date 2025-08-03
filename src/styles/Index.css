@@ -237,6 +237,10 @@
         flex-direction: column;
         width: 100%;
     }
+    
+    .characters__title {
+        font-size: 1.5rem;
+    }
 
     .index__alex, .index__tsukiko {
         flex-direction: column;
